@@ -201,8 +201,8 @@ console.log(this.props.activeAddress)
                     {this.state.cat == "Hoomens" ? 
                       <>
                       <br />
-                        <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="images/Treats.svg"/>
+                        <Typography color="secondary" align="center" variant="h6" style={{display: "flex", margin: "auto", position: "relative", justifyContent: "center"}}> 
+                        <img style={{width: 50, paddingRight: 20}} src="images/Treats.svg"/>
                         {(12000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>
@@ -217,8 +217,8 @@ console.log(this.props.activeAddress)
                     {this.state.cat == "Refunds" ? 
                       <>
                       <br />
-                        <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="images/Treats.svg"/>
+                        <Typography color="secondary" align="center" variant="h6" style={{display: "flex", margin: "auto", position: "relative", justifyContent: "center"}}> 
+                        <img style={{width: 50, paddingRight: 20}} src="images/Treats.svg"/>
                         {(8400).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>

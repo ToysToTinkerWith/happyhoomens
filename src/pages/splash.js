@@ -6,7 +6,16 @@ export default function SplashScreen() {
   useEffect(() => {
     setTimeout(() => {
       setDisplaySplashScreen(false);
+      document.body.style.overflow = 'auto'; // allow scrolling again
     }, 6000);
+
+    // disable scrolling when the splash screen is displayed
+    document.body.style.overflow = 'hidden';
+
+    // cleanup function to remove the overflow: hidden style when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
   }, []);
 
   return (
