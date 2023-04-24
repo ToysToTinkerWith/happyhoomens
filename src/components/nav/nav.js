@@ -14,7 +14,7 @@ export default function Nav(props) {
         <Grid container>
             <Grid item xs={12} sm={6}>
                 <img src={"images/hooman.jpg"} style={{width: "20%", minWidth: 50, marginTop: "5%", marginBottom: "5%", marginRight: 20, marginLeft: 30, maxWidth: 100, border: "3px solid black", borderRadius: 15}} />
-                <Typography variant="h5" style={{position: "relative", display: "inline", bottom: '42%', fontSize: "xx-large"}}> Happy Humans</Typography>
+                <Typography variant="h5" style={{position: "relative", display: "inline", bottom: '42%', fontSize: "xx-large"}}> Happy Hoomens</Typography>
             </Grid>
 
             <Grid item xs={12} sm={6}>

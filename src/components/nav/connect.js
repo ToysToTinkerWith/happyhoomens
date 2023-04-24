@@ -23,7 +23,7 @@ export default function Connect(props) {
   // Render account information and "connect", "set active", and "disconnect" buttons.
   // Finally, map through the `accounts` property to render a dropdown for each connected account.
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 0, height: "100%"}}>
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 0, height: "100%", backgroundColor: "#AAAFFF"}}>
 
 
       <Button
@@ -53,15 +53,20 @@ export default function Connect(props) {
           vertical: 'bottom',
           horizontal: 'left',
         }}
+        PaperProps={{
+          style: {
+            backgroundColor: '#AAAFFF'
+          },
+        }}
       >
    
       {providers?.map((provider) => (
-        <div key={'provider-' + provider.metadata.id} style={{margin: 30}}>
-          <h4>
+        <div key={'provider-' + provider.metadata.id} style={{margin: 30, backgroundColor: "#AAAFFF"}}>
+          <h4 style={{ display: "flex", alignItems: "center", justifyContent: "center"}}>
             <img width={30} height={30} alt="" src={provider.metadata.icon} />
             {provider.metadata.name} {provider.isActive && '[active]'}
           </h4>
-          <div>
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}> 
             <button onClick={provider.connect} disabled={provider.isConnected}>
               Connect
             </button>
@@ -74,9 +79,15 @@ export default function Connect(props) {
             >
               Set Active
             </button>
-            <div>
+            <div style={{ position: "relative", width: 0, top: 25, right: "96%"}}>
               {provider.isActive && provider.accounts.length && (
                 <select
+                  style={{
+                    width: 200,
+                    position: "relative", 
+                    backgroundColor: "#FFAFAA",
+                    borderRadius: 4
+                  }}
                   value={activeAccount?.address}
                   onChange={(e) => provider.setActiveAccount(e.target.value)}
                 >
