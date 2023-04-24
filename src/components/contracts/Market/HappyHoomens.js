@@ -202,7 +202,7 @@ console.log(this.props.activeAddress)
                       <>
                       <br />
                         <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="./Treats.svg"/>
+                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="images/Treats.svg"/>
                         {(12000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>
@@ -218,7 +218,7 @@ console.log(this.props.activeAddress)
                       <>
                       <br />
                         <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="./Treats.svg"/>
+                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="images/Treats.svg"/>
                         {(8400).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>

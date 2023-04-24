@@ -201,7 +201,7 @@ export default function RefundHoomen(props) {
                   {props.activeAddress ?
                   <Button variant="outlined" color="secondary" style={{display: "flex", margin: "auto"}} onClick={() => Refund()}>
                     <Typography  variant="h6"> Refund 8,400 </Typography>
-                    <img src="./Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
+                    <img src="images/Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
                   </Button>
                   :
                   <Button onClick={() => window.scrollTo(0, 0)}>

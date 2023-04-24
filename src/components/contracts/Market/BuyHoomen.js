@@ -216,14 +216,14 @@ export default function BuyHoomen(props) {
                   <>
                   <Button variant="contained" color="secondary" style={{display: "flex", margin: "auto"}} onClick={() => BuyNft("DC")}>
                     <Typography  variant="h6"> Buy 175,000 </Typography>
-                    <img src="invDC.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
+                    <img src="images/invDC.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
                   </Button>
                   <br />
                   <Typography align="center" color="secondary" variant="subtitle1"> or </Typography>
                   <br />
                   <Button variant="outlined" color="secondary" style={{display: "flex", margin: "auto"}} onClick={() => BuyNft("TRTS")}>
                     <Typography  variant="h6"> Buy 12,000 </Typography>
-                    <img src="./Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
+                    <img src="images/Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
                   </Button>
                   </>
                   :
