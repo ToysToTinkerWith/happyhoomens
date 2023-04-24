@@ -232,7 +232,7 @@ export default function RefundHoomen(props) {
             return (
        
                     <Button  onClick={() => props.setNft(props.nftId)} >
-                        <Typography style={{position: "absolute", top: 10, left: 10}} align="left" variant="caption"> {nft.name} </Typography>
+                        <Typography style={{position: "absolute", top: -15}} align="left" variant="caption"> {nft.name} </Typography>
                         <img style={{width: "100%", border: "3px solid black", borderRadius: 15}} src={nftUrl} />
                     </Button>
                 

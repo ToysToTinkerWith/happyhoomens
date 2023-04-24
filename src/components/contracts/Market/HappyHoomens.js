@@ -185,13 +185,13 @@ console.log(this.props.activeAddress)
                 <>
                   <Grid container align="center" spacing={3} >
                       <Grid item xs={12} sm={12} md={12} lg={12} >
-                          <Button style={{border: "1px solid black", borderRadius: 15, padding: 10}} onClick={() => this.state.cat == "Hoomens" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Hoomens", zoomNft: null, confirm: ""})}>
+                          <Button style={{border: "1px solid black", borderRadius: 4, padding: 10, height: 60, width: 200}} onClick={() => this.state.cat == "Hoomens" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Hoomens", zoomNft: null, confirm: ""})}>
                             <Typography  variant="h6" style={{color: "#000000"}}> Hoomens 1 </Typography>
                           </Button>
                           
                       </Grid>
                       <Grid item xs={12} sm={12} md={12} lg={12} >
-                          <Button style={{border: "1px solid black", borderRadius: 15, padding: 10}} onClick={() => this.state.cat == "Refunds" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Refunds", zoomNft: null, confirm: ""})}>
+                          <Button style={{border: "1px solid black", borderRadius: 4, padding: 10, height: 60, width: 200}} onClick={() => this.state.cat == "Refunds" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Refunds", zoomNft: null, confirm: ""})}>
                             <Typography  variant="h6" style={{color: "#000000"}}> Refunds </Typography>
                           </Button>
                           
