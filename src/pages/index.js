@@ -4,6 +4,8 @@ import Head from "next/head"
 
 import { Grid, Typography, Button } from "@mui/material"
 
+import SplashScreen from "./splash"
+
 import Nav from "../components/nav/nav"
 
 import HappyHoomens from "../components/contracts/Market/HappyHoomens"
@@ -28,6 +30,8 @@ export default function Index() {
 
                 
                 </Head>
+
+                <SplashScreen />
 
                <Nav />
 

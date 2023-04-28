@@ -201,7 +201,7 @@ export default function RefundHoomen(props) {
                   {props.activeAddress ?
                   <Button variant="outlined" color="secondary" style={{display: "flex", margin: "auto"}} onClick={() => Refund()}>
                     <Typography  variant="h6"> Refund 8,400 </Typography>
-                    <img src="./Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
+                    <img src="images/Treats.svg" style={{display: "flex", margin: "auto", width: 50, padding: 10}} />
                   </Button>
                   :
                   <Button onClick={() => window.scrollTo(0, 0)}>
@@ -232,8 +232,8 @@ export default function RefundHoomen(props) {
             return (
        
                     <Button  onClick={() => props.setNft(props.nftId)} >
-                        <Typography style={{position: "absolute", top: 10, left: 10}} align="left" variant="caption"> {nft.name} </Typography>
-                        <img style={{width: "100%"}} src={nftUrl} />
+                        <Typography style={{position: "absolute", top: -15}} align="left" variant="caption"> {nft.name} </Typography>
+                        <img style={{width: "100%", border: "3px solid black", borderRadius: 15}} src={nftUrl} />
                     </Button>
                 
     

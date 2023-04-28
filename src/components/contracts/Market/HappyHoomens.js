@@ -185,13 +185,13 @@ console.log(this.props.activeAddress)
                 <>
                   <Grid container align="center" spacing={3} >
                       <Grid item xs={12} sm={12} md={12} lg={12} >
-                          <Button style={{border: "1px solid black", borderRadius: 15, padding: 10}} onClick={() => this.state.cat == "Hoomens" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Hoomens", zoomNft: null, confirm: ""})}>
+                          <Button style={{border: "1px solid black", borderRadius: 4, padding: 10, height: 60, width: 200}} onClick={() => this.state.cat == "Hoomens" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Hoomens", zoomNft: null, confirm: ""})}>
                             <Typography  variant="h6" style={{color: "#000000"}}> Hoomens 1 </Typography>
                           </Button>
                           
                       </Grid>
                       <Grid item xs={12} sm={12} md={12} lg={12} >
-                          <Button style={{border: "1px solid black", borderRadius: 15, padding: 10}} onClick={() => this.state.cat == "Refunds" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Refunds", zoomNft: null, confirm: ""})}>
+                          <Button style={{border: "1px solid black", borderRadius: 4, padding: 10, height: 60, width: 200}} onClick={() => this.state.cat == "Refunds" ? this.setState({cat: "", zoomNft: null, confirm: ""}) : this.setState({cat: "Refunds", zoomNft: null, confirm: ""})}>
                             <Typography  variant="h6" style={{color: "#000000"}}> Refunds </Typography>
                           </Button>
                           
@@ -201,8 +201,8 @@ console.log(this.props.activeAddress)
                     {this.state.cat == "Hoomens" ? 
                       <>
                       <br />
-                        <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="./Treats.svg"/>
+                        <Typography color="secondary" align="center" variant="h6" style={{display: "flex", margin: "auto", position: "relative", justifyContent: "center"}}> 
+                        <img style={{width: 50, paddingRight: 20}} src="images/Treats.svg"/>
                         {(12000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>
@@ -217,8 +217,8 @@ console.log(this.props.activeAddress)
                     {this.state.cat == "Refunds" ? 
                       <>
                       <br />
-                        <Typography color="secondary" align="center" variant="h6"> 
-                        <img style={{width: 50, paddingRight: 20, marginLeft: 20}} src="./Treats.svg"/>
+                        <Typography color="secondary" align="center" variant="h6" style={{display: "flex", margin: "auto", position: "relative", justifyContent: "center"}}> 
+                        <img style={{width: 50, paddingRight: 20}} src="images/Treats.svg"/>
                         {(8400).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
  
                         </Typography>
